@@ -1,7 +1,7 @@
 # Reflection
 
-Student Name:  name
-Sudent Email:  email
+Student Name:  Gabrielle Russo
+Sudent Email:  grusso01@syr.edu
 
 ## Instructions
 
@@ -23,3 +23,4 @@ Examples:
 
 `--- Reflection Below This Line ---`
 
+This assignment helped me understand how to scrape structured data using Playwright and how to clean and store that data with Python. I learned how fragile web scraping can be. Small differences in HTML structure, like missing photos, caused some menu items to be skipped. Debugging this was frustrating, especially since the code failed silently. I also struggled with Python packaging and import errors, like figuring out when to use relative imports, __init__.py, and the __main__ block was confusing. While I got the code mostly working, I never resolved why only 109 out of 113 menu items were captured. I now realize the importance of error handling and writing more flexible extraction logic.

@@ -13,17 +13,18 @@ def clean_price(price:str) -> float:
 
 def clean_scraped_text(scraped_text: str) -> list[str]:
     items = scraped_text.split("\n")
-    clean = []
+    cleaned = []
     for item in items:
-        if item in ["S","V","GS","P"]:
+        if item in ['GS',"V","S","P"]:
             continue
         if item.startswith("NEW"):
             continue
         if len(item.strip()) == 0:
             continue
 
-        clean.append(item)
-    return clean
+        cleaned.append(item)
+
+    return cleaned
 
 def extract_menu_item(title:str, scraped_text: str) -> MenuItem:
     clean_items = clean_scraped_text(scraped_text)
